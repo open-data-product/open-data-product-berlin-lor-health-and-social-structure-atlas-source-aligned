@@ -1,12 +1,12 @@
-[![Issues](https://img.shields.io/github/issues/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-health-and-social-structure-atlas-source-aligned)](https://github.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-health-and-social-structure-atlas-source-aligned/issues)
+[![Issues](https://img.shields.io/github/issues/open-data-product/open-data-product-berlin-lor-health-and-social-structure-atlas-source-aligned)](https://github.com/open-data-product/open-data-product-berlin-lor-health-and-social-structure-atlas-source-aligned/issues)
 
 <br />
 <p align="center">
-  <a href="https://github.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-health-and-social-structure-atlas-source-aligned">
-    <img src="logo_with_text.png" alt="Logo" height="80">
+  <a href="https://github.com/open-data-product/open-data-product-berlin-lor-health-and-social-structure-atlas-source-aligned">
+    <img src="logo-with-text.png" alt="Logo" height="80">
   </a>
 
-  <h1 align="center">Open Lifeworlds Data Product - Berlin LOR Health and Social Structure Atlas (source-aligned)</h1>
+  <h1 align="center">Berlin LOR Health and Social Structure Atlas (source-aligned)</h1>
 
   <p align="center">
     Source-aligned data product providing Berlin LOR health and social structure atlas</a>
@@ -47,7 +47,7 @@ Examples:
 
 ## Roadmap
 
-See the [open issues](https://github.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-health-and-social-structure-atlas-source-aligned/issues) for a list of proposed features (and
+See the [open issues](https://github.com/open-data-product/open-data-product-berlin-lor-health-and-social-structure-atlas-source-aligned/issues) for a list of proposed features (and
  known issues).
 
 ## License
@@ -58,4 +58,4 @@ Data product distributed under the [CC-BY 4.0 License](https://creativecommons.o
 
 ## Contact
 
-openlifeworlds@gmail.com
+opendataproduct@gmail.com
