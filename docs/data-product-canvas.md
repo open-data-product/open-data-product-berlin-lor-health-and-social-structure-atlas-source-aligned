@@ -5,7 +5,7 @@
 
 * owner: Open Data Product
 * description: Source-aligned data product combining Berlin LOR health and social structure data
-* updated: 2025-06-10
+* updated: 2025-06-24
 
 ## Input Ports
 
@@ -37,13 +37,20 @@
 * [gssa_2022_prognoseraeume.csv](https://www.berlin.de/sen/gesundheit/_assets/daten/gesundheits-und-sozialstrukturatlas/gssa_2022_prognoseraeume.csv)
 * [gssa_2022_bezirke.csv](https://www.berlin.de/sen/gesundheit/_assets/daten/gesundheits-und-sozialstrukturatlas/gssa_2022_bezirke.csv)
 
+## Transformation Steps
+
+* [Data extractor](https://github.com/open-data-product/open-data-product-python-lib/blob/main/opendataproduct/extract/data_extractor.py) extracts data from inout ports
+* [Data copier](https://github.com/open-data-product/open-data-product-python-lib/blob/main/opendataproduct/transform/data_copier.py) copies and renames extracted data
+* [Data CSV converter](https://github.com/open-data-product/open-data-product-python-lib/blob/main/opendataproduct/transform/data_csv_converter.py) converts Excel files to CSV format
+* [Data CSV aggregator](https://github.com/open-data-product/open-data-product-python-lib/blob/main/opendataproduct/transform/data_csv_aggregator.py) aggregates data to be used as output ports
+
 ## Output Ports
 
 ### Berlin Lor Health And Social Structure Atlas 2013 00
 
 * owner: Open Data Product
 * url: https://github.com/open-data-product/open-data-product-berlin-lor-health-and-social-structure-atlas-source-aligned/tree/main/data/02-silver/berlin-lor-health-and-social-structure-atlas-2013-00
-* updated: 2025-06-10
+* updated: 2025-06-24
 
 **Files**
 
@@ -56,7 +63,7 @@
 
 * owner: Open Data Product
 * url: https://github.com/open-data-product/open-data-product-berlin-lor-health-and-social-structure-atlas-source-aligned/tree/main/data/02-silver/berlin-lor-health-and-social-structure-atlas-2022-00
-* updated: 2025-06-10
+* updated: 2025-06-24
 
 **Files**
 
@@ -69,7 +76,7 @@
 
 * owner: Open Data Product
 * url: https://github.com/open-data-product/open-data-product-berlin-lor-health-and-social-structure-atlas-source-aligned/tree/main/data/03-gold/berlin-lor-health-and-social-structure-atlas-2013-00
-* updated: 2025-06-10
+* updated: 2025-06-24
 
 **Files**
 
@@ -82,7 +89,7 @@
 
 * owner: Open Data Product
 * url: https://github.com/open-data-product/open-data-product-berlin-lor-health-and-social-structure-atlas-source-aligned/tree/main/data/03-gold/berlin-lor-health-and-social-structure-atlas-2022-00
-* updated: 2025-06-10
+* updated: 2025-06-24
 
 **Files**
 
