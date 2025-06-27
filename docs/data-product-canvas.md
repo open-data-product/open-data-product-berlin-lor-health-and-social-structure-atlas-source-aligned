@@ -5,7 +5,7 @@
 
 * owner: Open Data Product
 * description: Source-aligned data product combining Berlin LOR health and social structure data
-* updated: 2025-06-24
+* updated: 2025-07-22
 
 ## Input Ports
 
@@ -50,7 +50,7 @@
 
 * owner: Open Data Product
 * url: https://github.com/open-data-product/open-data-product-berlin-lor-health-and-social-structure-atlas-source-aligned/tree/main/data/02-silver/berlin-lor-health-and-social-structure-atlas-2013-00
-* updated: 2025-06-24
+* updated: 2025-07-22
 
 **Files**
 
@@ -63,7 +63,7 @@
 
 * owner: Open Data Product
 * url: https://github.com/open-data-product/open-data-product-berlin-lor-health-and-social-structure-atlas-source-aligned/tree/main/data/02-silver/berlin-lor-health-and-social-structure-atlas-2022-00
-* updated: 2025-06-24
+* updated: 2025-07-22
 
 **Files**
 
@@ -76,7 +76,7 @@
 
 * owner: Open Data Product
 * url: https://github.com/open-data-product/open-data-product-berlin-lor-health-and-social-structure-atlas-source-aligned/tree/main/data/03-gold/berlin-lor-health-and-social-structure-atlas-2013-00
-* updated: 2025-06-24
+* updated: 2025-07-22
 
 **Files**
 
@@ -89,7 +89,7 @@
 
 * owner: Open Data Product
 * url: https://github.com/open-data-product/open-data-product-berlin-lor-health-and-social-structure-atlas-source-aligned/tree/main/data/03-gold/berlin-lor-health-and-social-structure-atlas-2022-00
-* updated: 2025-06-24
+* updated: 2025-07-22
 
 **Files**
 

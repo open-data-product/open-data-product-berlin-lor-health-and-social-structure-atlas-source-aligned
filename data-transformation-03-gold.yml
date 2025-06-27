@@ -1,126 +1,135 @@
 ---
+attribute_groups:
+  districts: &districts-2013
+    - { name: district_id, rename: id }
+    - { name: district_name, remove: True }
+    - { name: health_and_social_index_2013, rename: health_and_social_index }
+    - { name: health_and_social_index_2022, remove: True }
+    - { name: employment_and_social_index_2013, rename: employment_and_social_index }
+    - { name: employment_and_social_index_2022, remove: True }
+    - { name: working_life_sub_index_2013, rename: working_life_sub_index }
+    - { name: working_life_sub_index_2022, remove: True }
+    - { name: social_status_sub_index_2013, rename: social_status_sub_index }
+    - { name: social_status_sub_index_2022, remove: True }
+    - { name: health_sub_index_2013, rename: health_sub_index }
+    - { name: health_sub_index_2022, remove: True }
+  forecast-areas: &forecast-areas-2013
+    - { name: forecast_area_id, rename: id }
+    - { name: forecast_area_name, remove: True }
+    - { name: health_and_social_index_2013, rename: health_and_social_index }
+    - { name: health_and_social_index_2022, remove: True }
+    - { name: employment_and_social_index_2013, rename: employment_and_social_index }
+    - { name: employment_and_social_index_2022, remove: True }
+    - { name: working_life_sub_index_2013, rename: working_life_sub_index }
+    - { name: working_life_sub_index_2022, remove: True }
+    - { name: social_status_sub_index_2013, rename: social_status_sub_index }
+    - { name: social_status_sub_index_2022, remove: True }
+    - { name: health_sub_index_2013, rename: health_sub_index }
+    - { name: health_sub_index_2022, remove: True }
+  district-regions: &district-regions-2013
+    - { name: district_region_id, rename: id }
+    - { name: district_region_name, remove: True }
+    - { name: health_and_social_index_2013, rename: health_and_social_index }
+    - { name: health_and_social_index_2022, remove: True }
+    - { name: employment_and_social_index_2013, rename: employment_and_social_index }
+    - { name: employment_and_social_index_2022, remove: True }
+    - { name: working_life_sub_index_2013, rename: working_life_sub_index }
+    - { name: working_life_sub_index_2022, remove: True }
+    - { name: social_status_sub_index_2013, rename: social_status_sub_index }
+    - { name: social_status_sub_index_2022, remove: True }
+    - { name: health_sub_index_2013, rename: health_sub_index }
+    - { name: health_sub_index_2022, remove: True }
+  planning-areas: &planning-areas-2013
+    - { name: planning_area_id, rename: id }
+    - { name: planning_area_name, remove: True }
+    - { name: health_and_social_index_2013, rename: health_and_social_index }
+    - { name: health_and_social_index_2022, remove: True }
+    - { name: employment_and_social_index_2013, rename: employment_and_social_index }
+    - { name: employment_and_social_index_2022, remove: True }
+    - { name: working_life_sub_index_2013, rename: working_life_sub_index }
+    - { name: working_life_sub_index_2022, remove: True }
+    - { name: social_status_sub_index_2013, rename: social_status_sub_index }
+    - { name: social_status_sub_index_2022, remove: True }
+    - { name: health_sub_index_2013, rename: health_sub_index }
+    - { name: health_sub_index_2022, remove: True }
+  districts-2022: &districts-2022
+    - { name: district_id, rename: id }
+    - { name: district_name, remove: True }
+    - { name: health_and_social_index_2013, remove: True }
+    - { name: health_and_social_index_2022, rename: health_and_social_index }
+    - { name: employment_and_social_index_2013, remove: True }
+    - { name: employment_and_social_index_2022, rename: employment_and_social_index }
+    - { name: working_life_sub_index_2013, remove: True }
+    - { name: working_life_sub_index_2022, rename: working_life_sub_index }
+    - { name: social_status_sub_index_2013, remove: True }
+    - { name: social_status_sub_index_2022, rename: social_status_sub_index }
+    - { name: health_sub_index_2013, remove: True }
+    - { name: health_sub_index_2022, rename: health_sub_index }
+  forecast-areas-2022: &forecast-areas-2022
+    - { name: forecast_area_id, rename: id }
+    - { name: forecast_area_name, remove: True }
+    - { name: health_and_social_index_2013, remove: True }
+    - { name: health_and_social_index_2022, rename: health_and_social_index }
+    - { name: employment_and_social_index_2013, remove: True }
+    - { name: employment_and_social_index_2022, rename: employment_and_social_index }
+    - { name: working_life_sub_index_2013, remove: True }
+    - { name: working_life_sub_index_2022, rename: working_life_sub_index }
+    - { name: social_status_sub_index_2013, remove: True }
+    - { name: social_status_sub_index_2022, rename: social_status_sub_index }
+    - { name: health_sub_index_2013, remove: True }
+    - { name: health_sub_index_2022, rename: health_sub_index }
+  district-regions-2022: &district-regions-2022
+    - { name: district_region_id, rename: id }
+    - { name: district_region_name, remove: True }
+    - { name: health_and_social_index_2013, remove: True }
+    - { name: health_and_social_index_2022, rename: health_and_social_index }
+    - { name: employment_and_social_index_2013, remove: True }
+    - { name: employment_and_social_index_2022, rename: employment_and_social_index }
+    - { name: working_life_sub_index_2013, remove: True }
+    - { name: working_life_sub_index_2022, rename: working_life_sub_index }
+    - { name: social_status_sub_index_2013, remove: True }
+    - { name: social_status_sub_index_2022, rename: social_status_sub_index }
+    - { name: health_sub_index_2013, remove: True }
+    - { name: health_sub_index_2022, rename: health_sub_index }
+  planning-areas-2022: &planning-areas-2022
+    - { name: planning_area_id, rename: id }
+    - { name: planning_area_name, remove: True }
+    - { name: health_and_social_index_2013, remove: True }
+    - { name: health_and_social_index_2022, rename: health_and_social_index }
+    - { name: employment_and_social_index_2013, remove: True }
+    - { name: employment_and_social_index_2022, rename: employment_and_social_index }
+    - { name: working_life_sub_index_2013, remove: True }
+    - { name: working_life_sub_index_2022, rename: working_life_sub_index }
+    - { name: social_status_sub_index_2013, remove: True }
+    - { name: social_status_sub_index_2022, rename: social_status_sub_index }
+    - { name: health_sub_index_2013, remove: True }
+    - { name: health_sub_index_2022, rename: health_sub_index }
 input_ports:
   - id: berlin-lor-health-and-social-structure-atlas-2013-00
     files:
       - source_file_name: berlin-lor-health-and-social-structure-atlas-2013-00-districts.csv
         target_file_name: berlin-lor-health-and-social-structure-atlas-2013-00-districts.csv
-        names:
-          - { name: district_id, rename: id }
-          - { name: district_name, remove: True }
-          - { name: health_and_social_index_2013, rename: health_and_social_index }
-          - { name: health_and_social_index_2022, remove: True }
-          - { name: employment_and_social_index_2013, rename: employment_and_social_index }
-          - { name: employment_and_social_index_2022, remove: True }
-          - { name: working_life_sub_index_2013, rename: working_life_sub_index }
-          - { name: working_life_sub_index_2022, remove: True }
-          - { name: social_status_sub_index_2013, rename: social_status_sub_index }
-          - { name: social_status_sub_index_2022, remove: True }
-          - { name: health_sub_index_2013, rename: health_sub_index }
-          - { name: health_sub_index_2022, remove: True }
+        names: *districts-2013
       - source_file_name: berlin-lor-health-and-social-structure-atlas-2013-00-forecast-areas.csv
         target_file_name: berlin-lor-health-and-social-structure-atlas-2013-00-forecast-areas.csv
-        names:
-          - { name: forecast_area_id, rename: id }
-          - { name: forecast_area_name, remove: True }
-          - { name: health_and_social_index_2013, rename: health_and_social_index }
-          - { name: health_and_social_index_2022, remove: True }
-          - { name: employment_and_social_index_2013, rename: employment_and_social_index }
-          - { name: employment_and_social_index_2022, remove: True }
-          - { name: working_life_sub_index_2013, rename: working_life_sub_index }
-          - { name: working_life_sub_index_2022, remove: True }
-          - { name: social_status_sub_index_2013, rename: social_status_sub_index }
-          - { name: social_status_sub_index_2022, remove: True }
-          - { name: health_sub_index_2013, rename: health_sub_index }
-          - { name: health_sub_index_2022, remove: True }
+        names: *forecast-areas-2013
       - source_file_name: berlin-lor-health-and-social-structure-atlas-2013-00-district-regions.csv
         target_file_name: berlin-lor-health-and-social-structure-atlas-2013-00-district-regions.csv
-        names:
-          - { name: district_region_id, rename: id }
-          - { name: district_region_name, remove: True }
-          - { name: health_and_social_index_2013, rename: health_and_social_index }
-          - { name: health_and_social_index_2022, remove: True }
-          - { name: employment_and_social_index_2013, rename: employment_and_social_index }
-          - { name: employment_and_social_index_2022, remove: True }
-          - { name: working_life_sub_index_2013, rename: working_life_sub_index }
-          - { name: working_life_sub_index_2022, remove: True }
-          - { name: social_status_sub_index_2013, rename: social_status_sub_index }
-          - { name: social_status_sub_index_2022, remove: True }
-          - { name: health_sub_index_2013, rename: health_sub_index }
-          - { name: health_sub_index_2022, remove: True }
+        names: *district-regions-2013
       - source_file_name: berlin-lor-health-and-social-structure-atlas-2013-00-planning-areas.csv
         target_file_name: berlin-lor-health-and-social-structure-atlas-2013-00-planning-areas.csv
-        names:
-          - { name: planning_area_id, rename: id }
-          - { name: planning_area_name, remove: True }
-          - { name: health_and_social_index_2013, rename: health_and_social_index }
-          - { name: health_and_social_index_2022, remove: True }
-          - { name: employment_and_social_index_2013, rename: employment_and_social_index }
-          - { name: employment_and_social_index_2022, remove: True }
-          - { name: working_life_sub_index_2013, rename: working_life_sub_index }
-          - { name: working_life_sub_index_2022, remove: True }
-          - { name: social_status_sub_index_2013, rename: social_status_sub_index }
-          - { name: social_status_sub_index_2022, remove: True }
-          - { name: health_sub_index_2013, rename: health_sub_index }
-          - { name: health_sub_index_2022, remove: True }
+        names: *planning-areas-2013
   - id: berlin-lor-health-and-social-structure-atlas-2022-00
     files:
       - source_file_name: berlin-lor-health-and-social-structure-atlas-2022-00-districts.csv
         target_file_name: berlin-lor-health-and-social-structure-atlas-2022-00-districts.csv
-        names:
-          - { name: district_id, rename: id }
-          - { name: district_name, remove: True }
-          - { name: health_and_social_index_2013, remove: True }
-          - { name: health_and_social_index_2022, rename: health_and_social_index }
-          - { name: employment_and_social_index_2013, remove: True }
-          - { name: employment_and_social_index_2022, rename: employment_and_social_index }
-          - { name: working_life_sub_index_2013, remove: True }
-          - { name: working_life_sub_index_2022, rename: working_life_sub_index }
-          - { name: social_status_sub_index_2013, remove: True }
-          - { name: social_status_sub_index_2022, rename: social_status_sub_index }
-          - { name: health_sub_index_2013, remove: True }
-          - { name: health_sub_index_2022, rename: health_sub_index }
+        names: *districts-2022
       - source_file_name: berlin-lor-health-and-social-structure-atlas-2022-00-forecast-areas.csv
         target_file_name: berlin-lor-health-and-social-structure-atlas-2022-00-forecast-areas.csv
-        names:
-          - { name: forecast_area_id, rename: id }
-          - { name: forecast_area_name, remove: True }
-          - { name: health_and_social_index_2013, remove: True }
-          - { name: health_and_social_index_2022, rename: health_and_social_index }
-          - { name: employment_and_social_index_2013, remove: True }
-          - { name: employment_and_social_index_2022, rename: employment_and_social_index }
-          - { name: working_life_sub_index_2013, remove: True }
-          - { name: working_life_sub_index_2022, rename: working_life_sub_index }
-          - { name: social_status_sub_index_2013, remove: True }
-          - { name: social_status_sub_index_2022, rename: social_status_sub_index }
-          - { name: health_sub_index_2013, remove: True }
-          - { name: health_sub_index_2022, rename: health_sub_index }
+        names: *forecast-areas-2022
       - source_file_name: berlin-lor-health-and-social-structure-atlas-2022-00-district-regions.csv
         target_file_name: berlin-lor-health-and-social-structure-atlas-2022-00-district-regions.csv
-        names:
-          - { name: district_region_id, rename: id }
-          - { name: district_region_name, remove: True }
-          - { name: health_and_social_index_2013, remove: True }
-          - { name: health_and_social_index_2022, rename: health_and_social_index }
-          - { name: employment_and_social_index_2013, remove: True }
-          - { name: employment_and_social_index_2022, rename: employment_and_social_index }
-          - { name: working_life_sub_index_2013, remove: True }
-          - { name: working_life_sub_index_2022, rename: working_life_sub_index }
-          - { name: social_status_sub_index_2013, remove: True }
-          - { name: social_status_sub_index_2022, rename: social_status_sub_index }
-          - { name: health_sub_index_2013, remove: True }
-          - { name: health_sub_index_2022, rename: health_sub_index }
+        names: *district-regions-2022
       - source_file_name: berlin-lor-health-and-social-structure-atlas-2022-00-planning-areas.csv
         target_file_name: berlin-lor-health-and-social-structure-atlas-2022-00-planning-areas.csv
-        names:
-          - { name: planning_area_id, rename: id }
-          - { name: planning_area_name, remove: True }
-          - { name: health_and_social_index_2013, remove: True }
-          - { name: health_and_social_index_2022, rename: health_and_social_index }
-          - { name: employment_and_social_index_2013, remove: True }
-          - { name: employment_and_social_index_2022, rename: employment_and_social_index }
-          - { name: working_life_sub_index_2013, remove: True }
-          - { name: working_life_sub_index_2022, rename: working_life_sub_index }
-          - { name: social_status_sub_index_2013, remove: True }
-          - { name: social_status_sub_index_2022, rename: social_status_sub_index }
-          - { name: health_sub_index_2013, remove: True }
-          - { name: health_sub_index_2022, rename: health_sub_index }
+        names: *planning-areas-2022
