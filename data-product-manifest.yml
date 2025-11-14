@@ -6,7 +6,7 @@ metadata:
   description: Source-aligned data product combining Berlin LOR health and social structure data
   url:
   license:
-  updated: 2025-10-27
+  updated: 2025-10-28
   schema:
     - name: health_and_social_index
       description: health and social index
@@ -68,7 +68,7 @@ output_ports:
       description:
       url: https://github.com/open-data-product/open-data-product-berlin-lor-health-and-social-structure-atlas-source-aligned/tree/main/data/03-gold/berlin-lor-health-and-social-structure-atlas-2013-00-csv
       license:
-      updated: 2025-10-27
+      updated: 2025-10-28
       schema:
     files:
       - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-health-and-social-structure-atlas-source-aligned/main/data/03-gold/berlin-lor-health-and-social-structure-atlas-2013-00-csv/berlin-lor-health-and-social-structure-atlas-2013-00-district-regions.csv
@@ -82,7 +82,7 @@ output_ports:
       description:
       url: https://github.com/open-data-product/open-data-product-berlin-lor-health-and-social-structure-atlas-source-aligned/tree/main/data/03-gold/berlin-lor-health-and-social-structure-atlas-2013-00-parquet
       license:
-      updated: 2025-10-27
+      updated: 2025-10-28
       schema:
     files:
       - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-health-and-social-structure-atlas-source-aligned/main/data/03-gold/berlin-lor-health-and-social-structure-atlas-2013-00-parquet/berlin-lor-health-and-social-structure-atlas-2013-00-district-regions.parquet
@@ -96,7 +96,7 @@ output_ports:
       description:
       url: https://github.com/open-data-product/open-data-product-berlin-lor-health-and-social-structure-atlas-source-aligned/tree/main/data/03-gold/berlin-lor-health-and-social-structure-atlas-2022-00-csv
       license:
-      updated: 2025-10-27
+      updated: 2025-10-28
       schema:
     files:
       - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-health-and-social-structure-atlas-source-aligned/main/data/03-gold/berlin-lor-health-and-social-structure-atlas-2022-00-csv/berlin-lor-health-and-social-structure-atlas-2022-00-district-regions.csv
@@ -110,7 +110,7 @@ output_ports:
       description:
       url: https://github.com/open-data-product/open-data-product-berlin-lor-health-and-social-structure-atlas-source-aligned/tree/main/data/03-gold/berlin-lor-health-and-social-structure-atlas-2022-00-parquet
       license:
-      updated: 2025-10-27
+      updated: 2025-10-28
       schema:
     files:
       - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-health-and-social-structure-atlas-source-aligned/main/data/03-gold/berlin-lor-health-and-social-structure-atlas-2022-00-parquet/berlin-lor-health-and-social-structure-atlas-2022-00-district-regions.parquet
